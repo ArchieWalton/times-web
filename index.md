@@ -5,4 +5,4 @@
 </ul>
 </body>
 </html>
-<script>document.getElementById("Test").innerHTML = 1000;</script>
+<script>document.getElementById("Test").innerHTML = 500;</script>
