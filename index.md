@@ -6,4 +6,4 @@
 </ul>
 </body>
 </html>
-<script>document.getElementById("Test").innerHTML = 30;</script>
+<script>document.getElementById("Test").innerHTML = 20;</script>
