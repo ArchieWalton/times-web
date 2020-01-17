@@ -1,1 +1,1 @@
-index.getElementById("Test").innerHTML = 20;
+index.getElementById("Test").innerHTML = 1000;
