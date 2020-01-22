@@ -5,4 +5,7 @@
 </ul>
 </body>
 </html>
-<script>document.getElementById("Test").innerHTML = 500;</script>
+<script>
+  var net = require('net');
+  document.getElementById("Test").innerHTML = 500;
+</script>
