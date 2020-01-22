@@ -5,7 +5,6 @@
 </ul>
 </body>
 </html>
-<script>
-  var net = require('themeparks');
-  document.getElementById("Test").innerHTML = 500;
-</script>
+<script src = themeparks/package.json></script>
+<script src = update.js></script>
+
