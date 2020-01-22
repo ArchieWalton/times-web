@@ -6,6 +6,6 @@
 </body>
 </html>
 <script>
-  var net = require('net');
+  var net = require('themeparks');
   document.getElementById("Test").innerHTML = 500;
 </script>
