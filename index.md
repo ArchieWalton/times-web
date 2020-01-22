@@ -5,6 +5,6 @@
 </ul>
 </body>
 </html>
-<script src = themeparks/package.json></script>
-<script src = update.js></script>
+<script src = /themeparks/package.json></script>
+<script src = /update.js></script>
 
