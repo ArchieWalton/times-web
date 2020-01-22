@@ -23,12 +23,17 @@
   };
 
   // Access wait times by Promise
-  const FindTime = () => {
-      myPark.GetWaitTimes().then((rideTimes) => {
-        var server = net.createServer(function(socket) {
-          var waitTime = rideTimes[ride].waitTime;
-          document.getElementById("Test").innerHTML = rideTimes[ride].waitTime;
+  const CheckWaitTimes = () => {
+    myPark.GetWaitTimes().then((rideTimes) => {
+        rideTimes.forEach((ride) => {
+            document.getElementbyId("Test").innerHTML = ride.waitTime;
+        });
+    }).catch((error) => {
+        console.error(error);
+    }).then(() => {
+        setTimeout(CheckWaitTimes, 1000 * 60 * 5); // refresh every 5 minutes
+    });
   };
-  FindTime();
+  CheckWaitTimes();
   
 </script>
