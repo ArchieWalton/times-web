@@ -1,1 +1,1 @@
-document.getElementById("Test").innerHTML = 40;
+document.getElementById("Test").innerHTML = "TEST123";
