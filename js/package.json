@@ -1,0 +1,18 @@
+{
+  "name": "bundle-themeparks-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "waittimes.js",
+  "scripts": {
+    "build": "browserify waittimes.js -o bundle.js"
+  },
+  "author": "Cubehouse, ParadoxEpcot",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^16.5.0"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.27",
+    "themeparks": "^5.1.33"
+  }
+}
