@@ -1,6 +1,7 @@
 var net = require('net');
 // include the Themeparks library
 const Themeparks = require("themeparks");
+document.write("<h1>Test</h1>");
 const code = 212;
 const park = Math.floor(code/100);
 const ride = code % 100;
