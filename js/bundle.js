@@ -124183,13 +124183,12 @@ if (park == 1){
 const CheckWaitTimes = () => {
     myPark.GetWaitTimes().then((rideTimes) => {
         rideTimes.forEach((ride) => {
-            console.log(ride.waitTime);
+            console.log(ride.name);
+            console.log(rideTimes[1].waitTime);
         });
     }).catch((error) => {
         console.error(error);
-    }).then(() => {
-        setTimeout(CheckWaitTimes, 1000 * 60 * 5); // refresh every 5 minutes
-    });
+    })
 };
 CheckWaitTimes();
 
