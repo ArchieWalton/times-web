@@ -26,10 +26,11 @@ var totalID = 0;
 const CheckWaitTimes = () => {
     myPark.GetWaitTimes().then((rideTimes) => {
         rideTimes.forEach((ride) => {
-            var currentID = park.toString();
-            totalID = currentID + addID.toString();
-            document.getElementById(totalID).innerHTML = ride.waitTime;
-            addID++;
+          document.write("Test1 achieved")
+          var currentID = park.toString();
+          totalID = currentID + addID.toString();
+          document.getElementById(totalID).innerHTML = ride.waitTime;
+          addID++;
         });
     }).catch((error) => {
         console.error(error);
