@@ -124155,7 +124155,7 @@ function defaultCallback(err) {
 
 }).call(this,require("buffer").Buffer,require("timers").setImmediate)
 },{"buffer":54,"buffer-crc32":229,"events":90,"fd-slicer":278,"fs":1,"stream":178,"timers":199,"util":205,"zlib":52}],721:[function(require,module,exports){
-const Themeparks = require("themeparks");
 document.getElementById("20").innerHTML = "Test";
+const Themeparks = require("themeparks");
 
 },{"themeparks":664}]},{},[721]);
