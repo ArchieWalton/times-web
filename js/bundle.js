@@ -124161,7 +124161,6 @@ const Themeparks = require("themeparks");
 const code = 212;
 const park = Math.floor(code/100);
 const ride = code % 100;
-console.log(park);
 // configure where SQLite DB sits
 // optional - will be created in node working directory if not configured
 // Themeparks.Settings.Cache = __dirname + "/themeparks.db";
@@ -124178,13 +124177,16 @@ if (park == 1){
 }else if (park == 4){
   var myPark = new Themeparks.Parks.WaltDisneyWorldAnimalKingdom();
 };
-
+var addID = 0;
+var totalID = 0;
 // Access wait times by Promise
 const CheckWaitTimes = () => {
     myPark.GetWaitTimes().then((rideTimes) => {
         rideTimes.forEach((ride) => {
-            console.log(ride.name);
-            console.log(rideTimes[1].waitTime);
+            var currentID = park.toString();
+            totalID = currentID + addID.toString();
+            document.getElementById(totalID).innerHTML = ride.waitTime;
+            addID++;
         });
     }).catch((error) => {
         console.error(error);
